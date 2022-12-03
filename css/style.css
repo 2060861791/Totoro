@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'totoro' !important;
+}
+
+@font-face {
+  font-family: 'totoro';
+  src: url(../font/all.ttf);
+}
+
+@font-face {
+  font-family: 'footer';
+  src: url(../font/footer.ttf);
+}
+
+a:hover {
+  transform: scale(1.05);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+}
+
+a:active {
+  color: #b000ff;
+}
+
+a:visited {
+  color: rgb(255 0 0);
+}
+
+span:hover {
+  transform: scale(1.05);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(227 227 227 / 70%);
+  overflow-x: hidden;
+}
+
+tr {
+  font-size: 20px;
+}
+
+#title {
+  font-family: '华文行楷' !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 40px !important;
+  font-weight: 500 !important;
+  margin-bottom: 15px;
+}
+
+footer {
+  /* position: absolute; */
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  /* bottom: 0; */
+}
+
+.footer {
+  margin: auto;
+  width: fit-content;
+  /*实现div居中，宽度自适应 */
+  line-height: 80px;
+  /* position: absolute;
+  top: 20px;
+  right: 31vw; */
+  color: rgb(255, 165, 180);
+  font-size: 30px;
+  font-family: '楷体';
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+nav {
+  position: absolute;
+  position: sticky;
+  z-index: 100011111;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* 左右padding */
+  padding: 0 5vw;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.445);
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+
+#first {
+  position: absolute;
+  left: 26px;
+  font-family: '华文行楷';
+  font-weight: 900;
+  font-size: 25px;
+}
+
+#jiaoshe {
+  margin-top: 100px !important;
+}
+
+.nav-menu {
+  /* 占令一半宽度 */
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+
+  /* 最宽550px */
+  max-width: 550px;
+}
+
+.nav-menu li {
+  width: 40%;
+  list-style: none;
+  color: #dadbdd;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nav-menu li a {
+  color: rgba(0, 0, 0, 0.716);
+}
+
+.burger div {
+  /* 设置汉堡按钮三层条 */
+  width: 25px;
+  height: 3px;
+  background-color: #dadbdd;
+  margin: 4px;
+}
+
+.burger {
+  display: none;
+}
+
+.big_div_002 {
+  display: block;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.big_div_002 .kong{
+  height: 50px;
+}
+
+.big_div_002 .title {
+  position: relative;
+  top: 25px;
+  font-size: 35px;
+}
+
+.box-left {
+  position: absolute;
+  width: 15%;
+  left: 100px;
+  top: -40px;
+  margin-top: 50px !important;
+}
+
+.box-left img {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(220, 156, 133);
+  width: 100%;
+}
+
+.box-right span {
+  color: black;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.box-right {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  width: 65%;
+}
+
+.box-right p {
+  margin-left: 15px !important;
+  width: 90%;
+  text-indent: 2em;
+  text-align: start;
+  font-size: 25px !important;
+  font-family: 'totoro';
+  color: black;
+  margin-top: 35px !important;
+}
+
+.small-box {
+  border: 1px solid rgb(210, 210, 210);
+  position: relative;
+  width: 90%;
+  height: 340px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 20px rgb(9 75 82 / 50%);
+}
+
+.small-box:hover {
+  scale: 1.01;
+}
+
+.big_div_003{
+  display: none;
+}
+
+.big_div_004 {
+  display: block;
+  width: 100%;
+  margin-top: 900px !important;
+}
+
+.big_div_004>.title {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.big_div_004>.you>span {
+  color: black;
+  font-size: 40px;
+}
+
+.big_div_004>.you>p {
+  margin: auto;
+  width: 90%;
+  text-align: start !important;
+  text-indent: 2em !important;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.big_div_004>.kong {
+  height: 10px;
+}
+
+.big_div_004>.img {
+  display: inline-block;
+  width: 45%;
+}
+
+.big_div_004>.img img {
+  width: 90%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.big_div_004>.you {
+  float: right;
+  width: 50%;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.big_div_004>.you>.totoro12{
+  width: 90%;
+}
+
+.big_div_004>.you>.totoro12>img {
+  width: 24%;
+}
+
+#base {
+  padding: 30px;
+  margin-top: 60px;
+}
+
+#base p {
+  width: 90%;
+  text-indent: 2em;
+  text-align: start;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 30px;
+  color: rgb(0 25 8 / 76%);
+  font-family: cursive;
+}
+
+#base span {
+  font-size: 30px;
+  color: rgb(60, 85, 94);
+  font-family: 翩翩体-简;
+  margin-top: 20px;
+}
+
+#base table {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#plot {
+  padding: 30px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#plot p {
+  width: 90%;
+  text-indent: 2em;
+  text-align: start;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 30px;
+  color: black;
+  font-family: cursive;
+}
+
+#plot div {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#plot div img {
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+}

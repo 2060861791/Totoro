@@ -1,0 +1,34 @@
+table.tftable {
+    font-size: 12px;
+    color: #333333;
+    width: 100%;
+    border-width: 2px;
+    border-color: #b5c9ff;
+    border-collapse: collapse;
+}
+
+table.tftable:hover {
+    scale: 1.002;
+}
+
+table.tftable th {
+    font-size: 12px;
+    background-color: #9bba83;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #9dcc7a;
+    text-align: left;
+}
+
+table.tftable tr {
+    background-color: #bedda7;
+}
+
+table.tftable td {
+    font-size: 20px;
+    border-width: 1px;
+    padding: 18px;
+    border-style: solid;
+    border-color: #bccfad;
+}

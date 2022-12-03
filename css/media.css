@@ -1,0 +1,522 @@
+/* 超小屏幕(<=575px) */
+@media screen and (max-width:575px) {
+  .head {
+    display: none;
+  }
+
+  nav {
+    position: fixed !important;
+  }
+
+  .nav-menu li a {
+    font-size: 14px;
+  }
+
+  .nav-menu li a:hover {
+    color: rgb(88, 224, 255);
+    scale: 1.1;
+    transition: 2s;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .footer {
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 50px;
+    font-family: 'footer' !important;
+    color: rgb(120 125 241);
+  }
+
+  .menu-box {
+    display: none;
+  }
+
+  /* 小屏幕菜单显示位置为右侧抽屉形式 */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    width: 30vw;
+    height: 80vw;
+
+    background-color: rgba(99, 123, 155, 0.445);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* 动画 */
+    transform: translatey(100%);
+    transition: 0.4s ease-in-out;
+  }
+
+  /* 菜单打开时，滑到初始位置 */
+  .nav-menu.open {
+    margin-right: 10px;
+    display: block;
+    transform: translatey(0);
+  }
+
+  /* 每个菜单项默认看不到，向右移动20象素 */
+
+
+  .nav-menu li {
+    width: 46% !important;
+    /* 上下间距 */
+    margin: 5vh;
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  /* 汉堡按钮被点开时，设置按钮过渡 */
+  .burger.active div {
+    transition: 0.3s ease-in-out 0.3s;
+  }
+
+  /* 第一条线旋转45度 */
+  .burger.active .top-line {
+    transform: rotate(45deg) translate(4px, 6px);
+  }
+
+  /* 第三条线旋转-45度 */
+  .burger.active .bottom-line {
+    transform: rotate(-45deg) translate(4px, -6px);
+  }
+
+  /* 中间线向右移动并变为透明 */
+  .burger.active .middle-line {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.3s ease-in-out;
+  }
+
+
+
+  /* 菜单项滑入动画 */
+  @keyframes slideIn {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  body {
+    background-color: white;
+    background-image: none;
+  }
+
+  .nav {
+    position: sticky;
+  }
+
+  .big_div {
+    border: 0px;
+    border-radius: 0;
+  }
+
+  .big_div_001 {
+    display: none;
+  }
+
+  .big_div_004{
+    display: none;
+  }
+
+  .big_div_002 {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .big_div_002 .title {
+    position: relative;
+    top: 25px;
+    font-size: 25px;
+  }
+
+  .big_div_003 {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .big_div_003>.title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .big_div_003>span {
+    color: black;
+    font-size: 17px;
+  }
+
+  .big_div_003>p {
+    margin: auto;
+    width: 90%;
+    text-align: start;
+    text-indent: 2em;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .big_div_003>.kong {
+    height: 10px;
+  }
+
+  .big_div_003>.img img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  
+  .small-box {
+    border: 1px solid rgb(210, 210, 210);
+    position: relative;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 20px rgb(9 75 82 / 50%);
+  }
+
+  .small-box:hover {
+    scale: 1.01;
+  }
+
+  .box-left {
+    position: absolute;
+    height: 70%;
+    width: 30%;
+    left: 30px;
+    top: -30px;
+  }
+
+  .box-left img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(220, 156, 133);
+    width: 100%;
+  }
+
+  .box-left span {
+    color: rgb(80 111 200);
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: '宋体';
+    font-weight: 600;
+  }
+
+  .box-right {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 55%;
+  }
+
+  .box-right span{
+    font-size: 20px;
+  }
+
+  .box-right p {
+    margin-left: 15px !important;
+    width: 90%;
+    text-indent: 2em;
+    text-align: start;
+    font-size: 15px !important;
+    font-family: 'totoro' !important;
+    color: black;
+    margin-top: 25px !important;
+  }
+
+  #first {
+    display: none;
+  }
+
+  .head {
+    height: 70px;
+  }
+
+  footer {
+    margin-top: 10px;
+    height: 50px;
+  }
+
+  #base {
+    display: none;
+  }
+
+  #plot {
+    display: none;
+  }
+
+}
+
+/* 小屏幕(576px <= width <= 768px) */
+@media screen and (min-width:576px) {
+  #first {
+    font-size: 18px;
+  }
+
+  .nav-menu li a {
+    font-size: 15px;
+  }
+
+  footer {
+    height: 50px;
+  }
+
+  .footer {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .box-right p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+  .box-left {
+    margin-top: 25px;
+  }
+
+  #base p {
+    width: 100%;
+    text-indent: 2em;
+    font-size: 23px;
+  }
+
+  #base span {
+    font-size: 25px;
+  }
+
+  #base table {
+    width: 100%;
+  }
+
+  .menu-button {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .menu-list {
+    width: 150px !important;
+    height: 200px !important;
+  }
+
+  .menu-list span {
+    font-size: 19px !important;
+  }
+
+  .menu-list li {
+    padding: 8px !important;
+  }
+
+  .menu-list .fa {
+    width: 15px !important;
+  }
+}
+
+/* 中屏幕(768px <= width <= 992px) */
+@media screen and (min-width:768px) {
+  #first {
+    font-size: 20px;
+  }
+
+  .nav-menu li a {
+    font-size: 17px;
+  }
+
+  footer {
+    height: 50px;
+  }
+
+  .footer {
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  .box-right p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+  .box-left {
+    margin-top: 30px;
+  }
+
+  #base p {
+    width: 100%;
+    text-indent: 2em;
+    font-size: 25px;
+  }
+
+  #base span {
+    font-size: 30px;
+  }
+
+  #base table {
+    width: 100%;
+  }
+
+  .menu-button {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .menu-list {
+    width: 150px !important;
+    height: 200px !important;
+  }
+
+  .menu-list span {
+    font-size: 20px !important;
+  }
+
+  .menu-list li {
+    padding: 10px !important;
+  }
+
+  .menu-list .fa {
+    width: 18px !important;
+  }
+}
+
+/* 大屏幕(992px <= width <= 1200px) */
+@media screen and (min-width:992px) {
+  #first {
+    font-size: 22px;
+  }
+
+  .nav-menu li a {
+    font-size: 17px;
+  }
+
+  footer {
+    height: 60px;
+  }
+
+  .footer {
+    font-size: 25px;
+    line-height: 60px;
+  }
+
+  .box-right p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+  .box-left {
+    margin-top: 30px;
+  }
+
+  #base p {
+    width: 90%;
+    text-indent: 2em;
+    font-size: 30px;
+  }
+
+  #base span {
+    font-size: 30px;
+  }
+
+  #base table {
+    width: 80%;
+  }
+
+  .menu-button {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .menu-list {
+    width: 150px !important;
+    height: 200px !important;
+  }
+
+  .menu-list span {
+    font-size: 20px !important;
+  }
+
+  .menu-list li {
+    padding: 10px !important;
+  }
+
+  .menu-list .fa {
+    width: 18px !important;
+  }
+}
+
+/* 超大屏幕(width >= 1200px) */
+@media screen and (min-width:1200px) {
+  #first {
+    font-size: 25px;
+  }
+
+  footer {
+    height: 80px;
+  }
+
+  .footer {
+    font-size: 30px;
+    line-height: 80px;
+  }
+
+  .box-right p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .box-left {
+    margin-top: 30px;
+  }
+
+  #base p {
+    width: 90%;
+    text-indent: 2em;
+    font-size: 30px;
+  }
+
+  #base span {
+    font-size: 30px;
+  }
+
+  #base table {
+    width: 80%;
+  }
+
+  .menu-button {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .menu-list {
+    width: 150px !important;
+    height: 200px !important;
+  }
+
+  .menu-list span {
+    font-size: 20px !important;
+  }
+
+  .menu-list li {
+    padding: 10px !important;
+  }
+
+  .menu-list .fa {
+    width: 18px !important;
+  }
+}

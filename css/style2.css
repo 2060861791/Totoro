@@ -1,0 +1,90 @@
+body,html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+
+}
+.pimg1, .pimg2, .pimg3{
+  position: relative;;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* fixed=parallax
+    scroll=normal*/
+}
+.pimg1{
+  min-height: 100%;
+  background-image: url('https://wallpaper.dog/large/20496803.jpg');
+}
+
+.pimg2{
+  min-height: 400px;
+  background-image: url('https://images6.alphacoders.com/517/517083.jpg');
+}
+.pimg3{
+  min-height: 400px;
+  background-image: url('https://images.alphacoders.com/914/9141.jpg');
+}
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-dark{
+  background-color:#111;
+  color: #FFF;
+}
+.section-light{
+  background-color: #FFF;
+  color: #111;
+}
+.ptext{
+  position: absolute;
+  top:50%;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border{
+  color: black;
+  padding: 20px;
+  font-weight: 900;
+}
+.ptext .border .trans{
+  background-color: transparent;
+}
+@media only screen and (max-device-width: 1366px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment: scroll;
+  }
+
+    .ptext{
+        letter-spacing: 0.188em;
+        font-size: 1.125em;
+        text-align: center;
+    }
+
+    .ptext .border{
+        color: black;
+        padding: 0.625em;
+    }
+}
+@media only screen and (min-device-width: 1366px){
+  .ptext{
+    font-size: 2vw;
+    letter-spacing: 10px;
+  }
+  .ptext .border{
+    padding: 25px;
+  }
+  
+}
