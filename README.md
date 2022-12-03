@@ -1,2 +1,4 @@
 # Levi
-响应式作业 主题龙猫（Totoro）
+响应式网页练习 主题动漫龙猫（Totoro）
+Responsive Web Practice
+Theme:Totoro
